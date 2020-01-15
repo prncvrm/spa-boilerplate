@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "watch:portal": "lerna run watch:portal --stream --concurrency 6",
+    "portal": "lerna run serve --stream",
+    "update-version": "lerna publish --skip-git --skip-npm --force-publish '*'",
+    "create-react-app": "node scripts/create-react"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-rc.1",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0-rc.1",
+    "@babel/plugin-syntax-export-extensions": "^7.0.0-beta.32",
+    "@babel/plugin-transform-modules-commonjs": "^7.0.0-rc.1",
+    "@babel/plugin-transform-runtime": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "@babel/preset-react": "^7.0.0-rc.1",
+    "@babel/preset-stage-0": "^7.0.0-rc.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^7.1.4",
+    "lerna": "^3.0.4",
+    "edit-json-file": "^1.4.0"
+  },
+  "name": "single-spa-portal-example"
+}
