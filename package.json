@@ -1,5 +1,8 @@
 {
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "watch:portal": "lerna run watch:portal --stream --concurrency 6",

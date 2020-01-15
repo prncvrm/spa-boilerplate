@@ -19,9 +19,9 @@ const validateAppName = () => {
     }
     const appPath = path.join(process.cwd(), 'packages', appName)
     process.env.PROJECT_PATH = appPath;
-    if (fs.existsSync(appPath)) {
-        throw new Error('App with Name exists', appName)
-    }
+    // if (fs.existsSync(appPath)) {
+    //     throw new Error('App with Name exists', appName)
+    // }
     
 }
 
@@ -34,11 +34,20 @@ copyTemplate()
 
 // editing package.json file
 const editJsonFile = require("edit-json-file");
-
+const webpack = require("./webpack-config.js");
 let file = editJsonFile(process.env.PROJECT_PACKAGE);
 file.set("name", `@singlespa/${process.argv[2]}`);
 file.set("scripts.watch:portal", `webpack-dev-server --port ${process.argv[3]}`);
 file.save()
+
+
+// //creating webpack.config.js file
+
+fs.writeFile(path.join(process.env.PROJECT_PATH,"webpack.config.js"), webpack.config(process.argv[2]), err => {
+  if (err) {
+    throw err;
+  }
+});
 
 // const chalk = require('react-dev-utils/chalk');
 // const webpack = require('webpack');

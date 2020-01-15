@@ -10,23 +10,23 @@ module.exports = {
     filename: '[name].js',
     path: path.resolve(__dirname, 'release'),
     libraryTarget: 'umd',
-    library: 'app1'
+    library: 'nav'
   },
 
   module: {
     rules: [
       {
-        test: /\.js/,
+        test: /.js/,
         use: ['babel-loader'],
         exclude: /node_modules/
       },
       {
-        test: /\.(png|jpg|gif)$/,
+        test: /.(png|jpg|gif)$/,
         use: [
           {
             loader: 'file-loader',
             options: {
-              publicPath: '/app1/'
+              publicPath: '/nav/'
             }
           }
         ]

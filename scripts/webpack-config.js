@@ -1,4 +1,6 @@
-const path = require('path');
+exports.config = function webpack (appName){
+
+	return `const path = require('path');
 
 module.exports = {
   entry: {
@@ -10,7 +12,7 @@ module.exports = {
     filename: '[name].js',
     path: path.resolve(__dirname, 'release'),
     libraryTarget: 'umd',
-    library: 'app1'
+    library: '${appName}'
   },
 
   module: {
@@ -26,7 +28,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              publicPath: '/app1/'
+              publicPath: '/${appName}/'
             }
           }
         ]
@@ -50,3 +52,5 @@ module.exports = {
     }
   }
 };
+`
+}
