@@ -1826,14 +1826,6 @@ edit-json-file@^1.4.0:
     set-value "^3.0.1"
     w-json "^1.3.5"
 
-edit-package-json@^0.1.16:
-  version "0.1.16"
-  resolved "https://registry.yarnpkg.com/edit-package-json/-/edit-package-json-0.1.16.tgz#905bd08e0c161eb9a3ba7b654d80c99d89044539"
-  integrity sha512-ZgBEo3e2poIJNvMi3uApdDxwNunuSHsB2L6qETWaOYuHwww3LZxM2PqeIROHU2iKkMVEFp7C/vwouII3ethEjw==
-  dependencies:
-    ranges-apply "^3.0.48"
-    string-left-right "^2.3.14"
-
 electron-to-chromium@^1.3.47:
   version "1.3.58"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.58.tgz#8267a4000014e93986d9d18c65a8b4022ca75188"
@@ -2449,16 +2441,6 @@ is-glob@^4.0.0:
   dependencies:
     is-extglob "^2.1.1"
 
-is-natural-number-string@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/is-natural-number-string/-/is-natural-number-string-1.0.1.tgz#d0ebf1c011fae2d3b0734d8c80116e2512a4a2e8"
-  integrity sha1-0OvxwBH64tOwc02MgBFuJRKkoug=
-
-is-natural-number@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/is-natural-number/-/is-natural-number-4.0.1.tgz#ab9d76e1db4ced51e35de0c72ebecf09f734cde8"
-  integrity sha1-q5124dtM7VHjXeDHLr7PCfc0zeg=
-
 is-number@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/is-number/-/is-number-3.0.0.tgz#24fd6201a4782cf50561c810276afc7d12d71195"
@@ -2696,16 +2678,6 @@ locate-path@^3.0.0:
 lodash._reinterpolate@~3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
-
-lodash.clonedeep@^4.5.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
-  integrity sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=
-
-lodash.isplainobject@^4.0.6:
-  version "4.0.6"
-  resolved "https://registry.yarnpkg.com/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz#7c526a52d89b45c45cc690b88163be0497f550cb"
-  integrity sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=
 
 lodash.sortby@^4.7.0:
   version "4.7.0"
@@ -3282,8 +3254,9 @@ q@^1.5.1:
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
 
 qs@~6.5.2:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.3.tgz#3aeeffc91967ef6e35c0e488ef46fb296ab76aad"
+  integrity sha512-qxXIEh4pCGfHICj1mAJQ2/2XVZkjCDTcEgfoSQxc/fYivUZxTkk7L3bDBJSoNrEzXI17oUO5Dp07ktqE5KzczA==
 
 quick-lru@^1.0.0:
   version "1.1.0"
@@ -3293,30 +3266,6 @@ r-json@^1.2.5:
   version "1.2.9"
   resolved "https://registry.yarnpkg.com/r-json/-/r-json-1.2.9.tgz#0637da3485b0b4492e9ffae85796f8b2f373f600"
   integrity sha512-E5u25XBE7PpZmH5XwtthAmNvSLMTygDQMpcPtCTUBdvwPaqgIYJrxlRQJhG55Sgz7uC0Tuyh5nqNrsDT3uiefA==
-
-ranges-apply@^3.0.48:
-  version "3.0.48"
-  resolved "https://registry.yarnpkg.com/ranges-apply/-/ranges-apply-3.0.48.tgz#68f2334a35e9f5c2c9726ee1a67dd17439efff6d"
-  integrity sha512-BnNKJGVJ70290B/h9dekLqZAqpA5zziUao5J93Zm0o/+x55ZoN+Sx2DIIGgnvNQ5e8W2kN7CvM6k5mBMxLWnxQ==
-  dependencies:
-    is-natural-number-string "^1.0.1"
-    ranges-merge "^4.2.31"
-
-ranges-merge@^4.2.31:
-  version "4.2.31"
-  resolved "https://registry.yarnpkg.com/ranges-merge/-/ranges-merge-4.2.31.tgz#57a1d47b5070d345c683cfb4e0cbf773ff2df294"
-  integrity sha512-YCoKrdj5juCPNoFipewrf/agmEXulgEkzcLhsUhlcZXZ5uMsVOdbRJNVdkPlZvvkqiKkzCNjrUYk2Yl3DHVmew==
-  dependencies:
-    lodash.clonedeep "^4.5.0"
-    lodash.isplainobject "^4.0.6"
-    ranges-sort "^3.10.46"
-
-ranges-sort@^3.10.46:
-  version "3.10.46"
-  resolved "https://registry.yarnpkg.com/ranges-sort/-/ranges-sort-3.10.46.tgz#80dcb20e2377cff70d21010c2cbdfbf3e7502d9e"
-  integrity sha512-H07aLdjKQRz3tUNHCj5P9Tof1vH35J4c3atXl8T/fs3SATKgzpkjACz9MfuuKgvQsXOFau2GDvQ/hl6Szw39/Q==
-  dependencies:
-    is-natural-number "^4.0.1"
 
 rc@^1.0.1, rc@^1.1.6:
   version "1.2.8"
@@ -3783,14 +3732,6 @@ static-extend@^0.1.1:
   dependencies:
     define-property "^0.2.5"
     object-copy "^0.1.0"
-
-string-left-right@^2.3.14:
-  version "2.3.14"
-  resolved "https://registry.yarnpkg.com/string-left-right/-/string-left-right-2.3.14.tgz#81cd8cc142a5d6f6a96896f4e712209c2eae4ff2"
-  integrity sha512-Z6/TNpG+aDijZyO0K32dPOI0d8R2uzXWhiibGMj+AZIqOBUY0BJnZ96OSNYQohSuABfZRu03POo/3rEhrxfLZw==
-  dependencies:
-    lodash.clonedeep "^4.5.0"
-    lodash.isplainobject "^4.0.6"
 
 string-width@^1.0.1:
   version "1.0.2"
